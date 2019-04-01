@@ -12,8 +12,12 @@
  Thoughts on future edits:
     Program compiles/runs as it, but in the future I would like to accomodate larger puzzles and improve speed/efficiency.
     Some easy fixes to improve speed could include avoiding copying the 2-D arrays every time a new Puzzle object is created.
-    A potential solution is to have one master version of the puzzle with each empty space  represented by its own object. Each space would have member variables for value, column, row, and box number.  The later 3 variables will allow for much faster updating of the puzzle following a contradiction or the selection of a value.
-    Another more drastic approach would be to rewrite the program in a manner that looks at the problem as a whole rather than one open space at a time.  This should allow the program to be shortened significantly and would improve overall performance.  Although more difficult, this approach should be acheivable once the solution in the line above is completed.  Once each open space has easily accessible column/row/box values, comparing entire columns/rows/boxes to find missing values will be significantly easier.
+    A potential solution is to have one master version of the puzzle with each empty space  represented by its own object. Each space would have member variables for value, column, row, and box number.  
+    The later 3 variables will allow for much faster updating of the puzzle following a contradiction or the selection of a value.
+    Another more drastic approach would be to rewrite the program in a manner that looks at the problem as a whole rather than one open space at a time.  
+    This should allow the program to be shortened significantly and would improve overall performance.  
+    Although more difficult, this approach should be acheivable once the solution in the line above is completed.  
+    Once each open space has easily accessible column/row/box values, comparing entire columns/rows/boxes to find missing values will be significantly easier.
  
  
  Input file format:
